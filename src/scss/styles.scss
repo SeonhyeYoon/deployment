@@ -1,16 +1,7 @@
-@use 'reset';
-@use 'font';
-@use 'page-header';
-@use 'app';
-@use 'button';
+@import 'reboot';
+@import 'app-bar';
+@import 'vars';
 
-/* Universal Style */
-html {
-    max-width: 480px;
-    min-width: 300px;
-    background-color: #f7f7f8;
-  }
-
-.hidden {
-    display: none;
+body {
+    background-color: $bgColor;
 }
