@@ -1,20 +1,41 @@
 {
-  "name": "workflow",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "Fewder is a simple Front End Framework for developing Web App's using modules",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "simple vanilla js project",
   "default": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run static && npx parcel src/index.html",
+    "static": "npx gulp",
+    "dev": "",
+    "build": "npm run static && npx parcel build src/index.html",
+    "clean:dev": "rm -rf .parcel-cache dist",
+    "clean:git": "rm -rf .parcel-cache dist  node_modules"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeonhyeYoon/TodoList.git"
+  },
+  "keywords": [
+    "to",
+    "do",
+    "list"
+  ],
+  "author": "Seonhye Yoon",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeonhyeYoon/TodoList/issues"
+  },
+  "homepage": "https://github.com/SeonhyeYoon/TodoList#readme",
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
     "http-server": "^13.0.2",
     "parcel": "^2.0.0-rc.0",
-    "sass": "^1.40.1"
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.21",
+    "uuid": "^8.3.2"
   }
 }

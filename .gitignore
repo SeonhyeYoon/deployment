@@ -1,12 +1,12 @@
 # node modules
-node_modules
+/node_modules
 
 # VS Code Files
-.vscode
+/.vscode
 
-# Parcel Files
-dist
-.parcel-cache
+# parcel files
+/.pracel-cache
+/dist
 
-# OS Files
+# System
 .DS_Store
